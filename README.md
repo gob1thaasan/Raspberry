@@ -10,5 +10,5 @@ Weekend Raspberry Pi projects. Each project folder contains a breadboard picture
 
 1.  [Raspberry Pi documentation](https://www.raspberrypi.org/documentation/) 
 2.  [Python Intro](http://bennuttall.github.io/python-intro/) 
-3.  [Raspeberry GPIO](https://learn.sparkfun.com/tutorials/raspberry-gpio) 
+3.  [Raspberry GPIO](https://learn.sparkfun.com/tutorials/raspberry-gpio) 
 4.  [Wolfram Mathematica with Raspberry Pi](https://www.wolfram.com/raspberry-pi/) 
