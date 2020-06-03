@@ -12,23 +12,26 @@ os.system('clear') #clear terminal
 print('hello world') #echo
 
 GPIO.setmode(GPIO.BOARD) # using gpio onboard numbering system
-GPIO.setup(8,GPIO.OUT) #using gnd pin 6 and input volt pin 8
-GPIO.setup(11, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+GPIO.setup(8,GPIO.OUT) # input 3.3v from volt pin 8
+GPIO.setup(11, GPIO.IN, pull_up_down=GPIO.PUD_UP) # push button using pin 11
 
+print("Coding running! Press CTRL+C to exit") #break while loop when CTL+C is pressed
 
-print("Coding running! Press CTRL+C to exit")
 try:
     while True:
-    
+        
+        # When button is pressed, turn the LED ON
         if GPIO.input(11):
             print("Pin 11 is HIGH")
             GPIO.output(8,True)
+        
+        # When button is NOT pressed, blink the LED
         else:
-        print("Pin 11 is LOW")
+            print("Pin 11 is LOW")
             GPIO.output(8,True)
             time.sleep(0.5)
             GPIO.output(8,False)
             time.sleep(0.5)
             
-except KeyboardInterrupt: # If CTRL+C is pressed, exit cleanly:
-    GPIO.cleanup() # cleanup all GPIO
+except KeyboardInterrupt: # If CTRL+C is pressed, break the loop.
+    GPIO.cleanup() # cleanup all GPIO pins
