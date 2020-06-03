@@ -1,5 +1,5 @@
 '''
-A circuit using aspberry Pi 4B that causes an LED to blink when a push button is NOT pressed. However, the LED stay on continually when the push button IS pressed.
+A circuit using Raspberry Pi 4B that causes an LED to blink when a push button is NOT pressed. However, the LED stay on continually when the push button IS pressed.
 
 Gobithaasan 3/6/2020
 '''
