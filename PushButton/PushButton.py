@@ -13,7 +13,7 @@ print('hello world') #echo
 
 GPIO.setmode(GPIO.BOARD) # using gpio onboard numbering system
 GPIO.setup(8,GPIO.OUT) # input 3.3v from volt pin 8
-GPIO.setup(11, GPIO.IN, pull_up_down=GPIO.PUD_UP) # push button using pin 11
+GPIO.setup(11, GPIO.IN, pull_up_down=GPIO.PUD_D) # push button using pin 11
 
 GPIO.output(8,False)
 
