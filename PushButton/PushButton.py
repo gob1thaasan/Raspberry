@@ -9,15 +9,12 @@ import time #using time function for blink
 import os
 
 os.system('clear') #clear terminal
-print('hello world') #echo
 
 GPIO.setmode(GPIO.BOARD) # using gpio onboard numbering system
 GPIO.setup(8,GPIO.OUT) # input 3.3v from volt pin 8
 GPIO.setup(11, GPIO.IN, pull_up_down=GPIO.PUD_UP) # push button using pin 11
 
-GPIO.output(8,False)
-
-def myblink()
+def myblink():
     GPIO.output(8,True)
     time.sleep(0.5)
     GPIO.output(8,False)
@@ -29,12 +26,12 @@ print("Coding running! Press CTRL+C to exit") #break while loop when CTL+C is pr
 try:
     while True:
         # When button is pressed, turn the LED ON
-        if GPIO.input(11):
-            print("Pin 11 is HIGH")
+        if GPIO.input(11) == 0:
+            print("Button is pressed!")
             GPIO.output(8,True)
         # When button is NOT pressed, blink the LED
         else:
-            print("Pin 11 is LOW")
+           # print("Button not pressed")
             myblink()
             
 except KeyboardInterrupt: # If CTRL+C is pressed, break the loop.
