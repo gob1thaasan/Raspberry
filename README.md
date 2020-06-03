@@ -1,9 +1,10 @@
 # Raspberry Pi
-Weekend Raspberry Pi projects. Each project folder contains a breadboard picture, code and a short video. Below is the list:
 ---
-1. Blink
+Weekend Raspberry Pi projects. Each project folder contains a breadboard picture (fritzing), python code and a short video. Below is the list:
 
-2. PushButton
+1. Blink: A Simple GPIO code to get started with. LED blinks when the code is run in the terminal: `$python3 blink.py` 
+
+2. PushButton: A LED will blink when a push button is NOT pressed. However, the LED stay on continually when the push button IS pressed. Demo available at [Youtube](https://youtu.be/P6J-T9LiKJA)
 
 
 ## References
