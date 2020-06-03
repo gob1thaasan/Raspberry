@@ -13,13 +13,22 @@ print('hello world') #echo
 
 GPIO.setmode(GPIO.BOARD) # using gpio onboard numbering system
 GPIO.setup(8,GPIO.OUT) #using gnd pin 6 and input volt pin 8
+GPIO.setup(11, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
-print("Here we go! Press CTRL+C to exit")
+
+print("Coding running! Press CTRL+C to exit")
 try:
     while True:
-        GPIO.output(8,True)
-        time.sleep(0.5)
-        GPIO.output(8,False)
-        time.sleep(0.5)
+    
+        if GPIO.input(11):
+            print("Pin 11 is HIGH")
+            GPIO.output(8,True)
+        else:
+        print("Pin 11 is LOW")
+            GPIO.output(8,True)
+            time.sleep(0.5)
+            GPIO.output(8,False)
+            time.sleep(0.5)
+            
 except KeyboardInterrupt: # If CTRL+C is pressed, exit cleanly:
     GPIO.cleanup() # cleanup all GPIO
