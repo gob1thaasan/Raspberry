@@ -6,6 +6,8 @@ Weekend Raspberry Pi projects. Each project folder contains a breadboard picture
 
 2. PushButton: A LED will blink when a push button is NOT pressed. However, the LED stay on continually when the push button IS pressed. Demo available at [Youtube](https://youtu.be/P6J-T9LiKJA)
 
+3. Socket: Making a listen server to a port (55555). Use [NetCat](http://netcat.sourceforge.net/) to make request in another terminal.
+
 
 ## References
 
