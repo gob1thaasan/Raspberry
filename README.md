@@ -8,6 +8,7 @@ Weekend Raspberry Pi projects. Each project folder contains a breadboard picture
 
 3. Socket: Making a listen server to a port (55555). Use [NetCat](http://netcat.sourceforge.net/) to make request in another terminal.
 
+4. PulseWidhModulation: to control actuators (in this case a servo) using Pulse Width Modulation (PDM).Thus, look at the pins of Raspberry Pi and identify PWM pins before using. I am using pin number 32 (BOARD numbering). The demo is available at [Youtube](https://youtu.be/Vz7-1uDE2Uw).
 
 ## References
 
