@@ -29,4 +29,5 @@ try:
 except KeyboardInterrupt: # If CTRL+C is pressed, exit cleanly:
 	os.system('clear')	
 	print('Bye!')	
+	pwm.stop()
 	GPIO.cleanup
